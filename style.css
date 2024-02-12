@@ -1,0 +1,145 @@
+/* Reset de estilos para eliminar márgenes, rellenos y estilos de lista predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    /* Fondo degradado negro */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+    /* Texto blanco por defecto */
+    color: #fff;
+    /* Fuente principal */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Altura mínima del cuerpo */
+    min-height: 50vh;
+}
+
+/* Contenedor principal con ancho máximo y centrado */
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* Barra de navegación */
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para listas y elementos de lista */
+ul {
+    display: flex;
+}
+
+li {
+    padding: 0 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    /* Texto blanco para elementos de lista */
+    color: #fff;
+}
+
+/* Estilos para enlaces */
+li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    /* Texto blanco para enlaces */
+    color: #fff;
+}
+
+/* Contenedor del carrusel */
+.swiper-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* Diapositiva del carrusel */
+.swiper-slide {
+    /* Fondo transparente */
+    background-color: transparent;
+    /* Borde redondeado */
+    border-radius: 15px;
+    /* Contenido oculto que se desborda de los bordes redondeados */
+    overflow: hidden;
+    /* Posición relativa para posicionar elementos secundarios */
+    position: relative;
+    /* Dimensiones de cada diapositiva */
+    height: 420px;
+    width: 295px;
+}
+
+/* Imagen dentro de cada diapositiva */
+.swiper-slide img {
+    /* Imagen ocupa todo el ancho de la diapositiva */
+    width: 100%;
+    /* Borde redondeado */
+    border-radius: 15px;
+    /* Imagen ocupa todo el alto de la diapositiva */
+    height: 100%;
+}
+
+/* Texto dentro de cada diapositiva */
+.swiper-txt {
+    /* Posición absoluta en relación con el contenedor padre */
+    position: absolute;
+    /* Relleno interno de 15px */
+    padding: 15px;
+    /* Índice z para superponer el texto sobre la imagen */
+    z-index: 1;
+    /* Posicionado en la esquina superior izquierda */
+    top: 0;
+    left: 0;
+}
+
+/* Título dentro del texto del carrusel */
+.swiper-txt h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    /* Texto negro */
+    color: #000;
+}
+
+/* Contenedor para la imagen de fondo en pantallas de escritorio */
+.desktop {
+    /* Texto centrado en pantalla */
+    text-align: center;
+    /* Índice z para superponer sobre otros elementos */
+    z-index: 1;
+}
+
+/* Imagen de fondo en pantallas de escritorio */
+.desktop img {
+    /* Ancho de 800px */
+    width: 300px;
+    margin-top: 50px;
+}
+
+/* Estilos para pantallas más pequeñas (máx. ancho de 991px) */
+@media (max-width: 991px) {
+    /* Mayor relleno en la barra de navegación */
+    .navbar {
+        padding: 30px;
+    }
+
+    /* Ocultar la parte izquierda de la barra de navegación */
+    .left {
+        display: none;
+    }
+
+    /* Ajustes para el carrusel en pantallas más pequeñas */
+    .swiper {
+        padding: 0 70px;
+    }
+
+    /* Imágenes del carrusel ocupan todo el ancho */
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    /* Ajustes para la imagen de fondo en pantallas de escritorio más pequeñas
