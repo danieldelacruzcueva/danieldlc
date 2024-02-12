@@ -1,22 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel en Amarillo</title>
-    <style>
-        body {
-            background-color: black;
-            color: yellow;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-    </style>
+    <title>Document</title>
+    <!-- Enlace al archivo de estilos de Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Enlace al archivo de estilos personalizado -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Daniel</h1>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar container">
+        <!-- Sección izquierda de la barra de navegación -->
+        <div class="left">
+            <ul>
+                <!-- Elementos de la lista en la sección izquierda -->
+                <li>Logo</li>
+                <li>Enero 2024</li>
+                <li>Hora 11:12</li>
+            </ul>
+        </div>
+        <!-- Sección derecha de la barra de navegación -->
+        <div class="right">
+            <ul>
+                <!-- Enlaces de la lista en la sección derecha -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Pronto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor del carrusel -->
+    <div class="swiper mySwiper container">
+        <!-- Contenedor de los slides -->
+        <div class="swiper-wrapper">
+            <!-- Primer slide -->
+            <div class="swiper-slide">
+                <!-- Contenedor de la imagen -->
+                <div class="swiper-img">
+                    <!-- Imagen del primer slide -->
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <!-- Contenedor del texto -->
+                <div class="swiper-txt">
+                    <!-- Título del primer slide -->
+                    <h3>Lorem Ipsum 1</h3>
+                    <!-- Descripción del primer slide -->
+                    <p>Descripción 1</p>
+                </div>
+            </div>
+            <!-- Repite la misma estructura para los demás slides... -->
+            <div class="swiper-slide">
+                <div class="swiper-img">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="swiper-txt">
+                    <h3>Lorem Ipsum 2</h3>
+                    <p>Descripción 2</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-img">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="swiper-txt">
+                    <h3>Lorem Ipsum 3</h3>
+                    <p>Descripción 3</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-img">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="swiper-txt">
+                    <h3>Lorem Ipsum 4</h3>
+                    <p>Descripción 4</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-img">
+                    <img src="images/5.jpg" alt="">
+                </div>
+                <div class="swiper-txt">
+                    <h3>Lorem Ipsum 5</h3>
+                    <p>Descripción 5</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-img">
+                    <img src="images/6.jpg" alt="">
+                </div>
+                <div class="swiper-txt">
+                    <h3>Lorem Ipsum 6</h3>
+                    <p>Descripción 6</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-img">
+                    <img src="images/7.jpg" alt="">
+                </div>
+                <div class="swiper-txt">
+                    <h3>Lorem Ipsum 7</h3>
+                    <p>Descripción 7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagen de fondo para la sección desktop -->
+    <div class="desktop">
+        <!-- Imagen de fondo para la sección desktop -->
+        <img src="images/bg.png" alt="">
+    </div>
+
+    <!-- Enlace al script de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Enlace al script personalizado -->
+    <script src="script.js" ></script>
 </body>
 </html>
